@@ -1,539 +1,824 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-	<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-	<meta content="width=device-width" name="viewport"/>
-	<!--[if !mso]><!-->
-	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-	<!--<![endif]-->
-	<title></title>
-	<!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css"/>
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css"/>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"/>
-	<!--<![endif]-->
-	<style type="text/css">
-	body {
-		margin: 0;
+	<!--==========================================================================>
+	[A] Generic Base - - EmailStarter - - 1.2 Breakfast Tacos
+	<?==========================================================================-->
+	<!-- [10] Normalize Email ================================================-->
+	<!--===== Primary Structure, Tables ======================================-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
+	<!--[if mso]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> <![endif]-->
+	<style>
+	body, #body {
+		margin: 0 0 !important;
 		padding: 0;
 	}
-
-	table,
-	td,
-	tr {
-		vertical-align: top;
+	#MessageViewBody, #MessageWebViewDiv {
+		width: 100% !important;
+	}
+	#global {
+		text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+	#global #content-wrap {
+		background-color: #ffffff;
+	}
+	#not-mso tbody, #not-mso tr, #not-mso td {
+		font-family: inherit;
+	}
+	#global table {
 		border-collapse: collapse;
+		border-style: none;
+		border-spacing: 0;
 	}
-
-	* {
-		line-height: inherit;
+	#global td {
+		padding: 0;
 	}
-
-	a[x-apple-data-detectors=true] {
-		color: inherit !important;
+	#global th {
+		padding: 0;
+		font-weight: normal;
+		text-align: left;
+		display: table-cell;
+	}
+	div, header, main, footer {
+		padding: 0;
+		margin: 0;
+	}
+	</style>
+	<!--===== Images, Anchors, Text ==========================================-->
+	<style>
+	img {
+		width: 100%;
+		border-style: none;
+		vertical-align: baseline;
+	}
+	@media only screen and (max-width: 599px) {
+		img {
+			height: auto;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+	#global a {
+		color: #000000;
+	}
+	table, .button {
+		font-family: Arial, sans-serif;
+	}
+	table {
+		font-weight: normal;
+		font-style: normal;
+		text-align: left;
+	}
+	p {
+		margin: 1em 0;
+	}
+	b, strong {
+		font-weight: bolder;
+	}
+	#mso li, #mso ol {
+		text-indent: -1em;
+	}
+	sup {
+		font-size: 58%;
+		line-height: 1.3em;
+		vertical-align: text-top;
+	}
+	</style>
+	<!--[if mso]> <style> sup { font-size: 90% !important; mso-text-raise: 2.5%; } </style> <![endif]-->
+	<!-- [20] Helpers ========================================================-->
+	<!--===== Tables, Dividers ===============================================-->
+	<style>
+	#global .inline-table {
+		display: inline-table;
+		min-width: 0;
+	}
+	@media only screen and (max-width: 599px) {
+		.inline-table {
+			width: 100% !important;
+		}
+	}
+	div.temp-name {
+		text-align: left;
+		background-color: yellow;
+		padding: 10px;
+		border-top: 1px solid black;
+		border-bottom: 1px dashed black;
+		margin-bottom: 10px;
+	}
+	</style>
+	<!--===== anchor =========================================================-->
+	<style>
+	#global a.a {
+		color: #0000FF;
+		text-decoration: underline;
+	}
+	#not-mso .underline {
+		border-bottom: 2px solid #0000FF;
+	}
+	#not-mso .underline a {
 		text-decoration: none !important;
 	}
-	</style>
-	<style id="media-query" type="text/css">
-	@media (max-width: 700px) {
-
-		.block-grid,
-		.col {
-			min-width: 320px !important;
-			max-width: 100% !important;
-			display: block !important;
+	#global .button {
+		color: #FFFFFF;
+		background-color: #0000FF;
+		display: inline-block;
+		text-align: center;
+	}
+	@media only screen and (max-width: 480px) {
+		.button {
+			max-width: 100%;
 		}
-
-		.block-grid {
-			width: 100% !important;
-		}
-
-		.col {
-			width: 100% !important;
-		}
-
-		.col_cont {
-			margin: 0 auto;
-		}
-
-		img.fullwidth,
-		img.fullwidthOnMobile {
-			max-width: 100% !important;
-		}
-
-		.no-stack .col {
-			min-width: 0 !important;
-			display: table-cell !important;
-		}
-
-		.no-stack.two-up .col {
-			width: 50% !important;
-		}
-
-		.no-stack .col.num2 {
-			width: 16.6% !important;
-		}
-
-		.no-stack .col.num3 {
-			width: 25% !important;
-		}
-
-		.no-stack .col.num4 {
-			width: 33% !important;
-		}
-
-		.no-stack .col.num5 {
-			width: 41.6% !important;
-		}
-
-		.no-stack .col.num6 {
-			width: 50% !important;
-		}
-
-		.no-stack .col.num7 {
-			width: 58.3% !important;
-		}
-
-		.no-stack .col.num8 {
-			width: 66.6% !important;
-		}
-
-		.no-stack .col.num9 {
-			width: 75% !important;
-		}
-
-		.no-stack .col.num10 {
-			width: 83.3% !important;
-		}
-
-		.video-block {
-			max-width: none !important;
-		}
-
-		.mobile_hide {
-			min-height: 0px;
-			max-height: 0px;
-			max-width: 0px;
-			display: none;
-			overflow: hidden;
-			font-size: 0px;
-		}
-
-		.desktop_hide {
-			display: block !important;
-			max-height: none !important;
+		.button.expand-for-small {
+			width: 100%;
+			min-width: 100%;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
 		}
 	}
 	</style>
-	<style id="icon-media-query" type="text/css">
-	@media (max-width: 700px) {
-		.icons-inner {
-			text-align: center;
+	<!--===== Image ==========================================================-->
+	<style>
+	@media only screen and (max-width: 599px) {
+		img.expand-for-medium, .images-expand-for-medium img {
+			min-width: 100%;
 		}
-
-		.icons-inner td {
-			margin: 0 auto;
+	}
+	.imageswap-mobile {
+		display: none;
+	}
+	@media only screen and (max-width: 480px) {
+		img.expand-for-small, .images-expand-for-small img {
+			min-width: 100%;
 		}
-
-		.reduce-lh {
-			line-height: 33px!important;
+		.imageswap-desktop {
+			width: 0px !important;
 		}
-
-		.center-img-mobile {
-			margin: 0 auto!important;
+		.imageswap-mobile {
+			display: block !important;
+			background-origin: border-box;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding-bottom: 100%;
 		}
 	}
 	</style>
+	<!--===== text and spacing ===============================================-->
+	<style>
+	p, h1, h2, h3, h4, h5, h6, ol, ul, li {
+		margin-top: 0;
+	}
+	.word-break-all {
+		word-break: break-all;
+	}
+	.word-break-nowrap {
+		word-wrap: normal;
+		overflow-wrap: normal;
+		word-break: keep-all;
+		white-space: nowrap;
+	}
+	.hr, .spacer {
+		font-size: 1px;
+		line-height: 1px;
+	}
+	#not-mso .inline-wrap {
+		font-size: 0;
+		line-height: 0;
+	}
+	#mso .inline-wrap {
+		font-size: 1em;
+		line-height: 1em;
+	}
+	.inline-wrap img {
+		font-size: 16px;
+		line-height: 1.15em;
+	}
+	@media only screen and (max-width: 480px) {
+		.align-left-for-small { text-align: left !important; }
+		.align-right-for-small { text-align: right !important; }
+		.align-center-for-small { text-align: center !important; }
+	}
+	</style>
+	<!--===== Show / Hide ====================================================-->
+	<style>
+	#mso .hide-for-mso, #not-mso .show-for-mso {
+		display: none !important;
+	}
+	#mso .show-for-mso, #not-mso .hide-for-mso {
+		display: block !important;
+	}
+	#mso .hide-for-mso table {
+		display: none !important;
+	}
+	.show-for-medium-only, .show-for-medium, .show-for-medium table, .show-for-medium-only table, .show-for-small, .show-for-small table {
+		display: none !important;
+	}
+	@media only screen and (max-width: 599px) {
+		.hide-for-medium-only, .hide-for-medium {
+			display: none !important;
+		}
+		.show-for-medium, .show-for-medium-only {
+			display: block !important;
+		}
+		span.show-for-medium, p.show-for-medium, a.show-for-medium, span.show-for-medium-only, p.show-for-medium-only, a.show-for-medium-only {
+			display: inline !important;
+		}
+		.show-for-medium table, table.show-for-medium, .show-for-medium-only table, table.show-for-medium-only {
+			display: table !important;
+		}
+		.show-for-medium table.inline-table, .show-for-medium-only table.inline-table {
+			display: inline-table !important;
+		}
+	}
+	@media only screen and (max-width: 480px) {
+		.show-for-medium-only, .hide-for-small {
+			display: none !important;
+		}
+		.hide-for-medium-only, .show-for-small {
+			display: block !important;
+		}
+		span.hide-for-medium-only, p.hide-for-medium-only, a.hide-for-medium-only, span.show-for-small, p.show-for-small, a.show-for-small {
+			display: inline !important;
+		}
+		.hide-for-medium-only table, table.hide-for-medium-only, .show-for-small table, table.show-for-small {
+			display: table !important;
+		}
+		.hide-for-medium-only table.inline-table, .show-for-small table.inline-table {
+			display: inline-table !important;
+		}
+	}
+	</style>
+	<!--===== Grid System ====================================================-->
+	<style>
+	@media only screen and (max-width: 599px) {
+		.grid {
+			table-layout: fixed;
+		}
+	}
+	@media only screen and (max-width: 480px) {
+		#global .grid-wrap {
+			margin: 0 auto;
+		}
+		#global .grid-narrow {
+			max-width: 300px;
+			min-width: 0;
+		}
+		#global .grid {
+			display: block;
+			margin: 0 auto;
+			word-spacing: -0.55ex;
+		}
+		.grid tbody, .grid tr {
+			display: inline;
+		}
+		.cell, .stack {
+			box-sizing: border-box;
+			display: inline-block;
+			width: 100% !important;
+			padding-bottom: 30px !important;
+			border: none !important;
+			word-spacing: normal;
+		}
+	}
+	.large-12 { width: 100% !important; }
+	.large-11 { width: 91.666% !important; }
+	.large-10 { width: 83.334% !important; }
+	.large-9  { width: 75% !important; }
+	.large-8  { width: 83.334% !important; }
+	.large-7  { width: 58.336% !important; }
+	.large-6  { width: 50% !important; }
+	.large-5  { width: 41.667% !important; }
+	.large-4  { width: 33.333% !important; }
+	.large-3  { width: 25% !important; }
+	.large-2  { width: 16.664% !important; }
+	.large-1  { width: 8.332% !important; }
+	@media only screen and (max-width: 599px) {
+		.medium-12 { width: 100% !important; }
+		.medium-11 { width: 91.666% !important; }
+		.medium-10 { width: 83.334% !important; }
+		.medium-9  { width: 75% !important; }
+		.medium-8  { width: 83.334% !important; }
+		.medium-7  { width: 58.336% !important; }
+		.medium-6  { width: 50% !important; }
+		.medium-5  { width: 41.667% !important; }
+		.medium-4  { width: 33.333% !important; }
+		.medium-3  { width: 25% !important; }
+		.medium-2  { width: 16.664% !important; }
+		.medium-1  { width: 8.332% !important; }
+	}
+	@media only screen and (max-width: 480px) {
+		.small-12 { width: 100% !important; }
+		.small-11 { width: 91.666% !important; }
+		.small-10 { width: 83.334% !important; }
+		.small-9  { width: 75% !important; }
+		.small-8  { width: 83.334% !important; }
+		.small-7  { width: 58.336% !important; }
+		.small-6  { width: 50% !important; }
+		.small-5  { width: 41.667% !important; }
+		.small-4  { width: 33.333% !important; }
+		.small-3  { width: 25% !important; }
+		.small-2  { width: 16.664% !important; }
+		.small-1  { width: 8.332% !important; }
+		.cell.last, .stack.last {
+			padding-bottom: 0 !important;
+		}
+	}
+	</style>
+	<!--==========================================================================>
+	[B] DTV Movie Newsletter Styles - - - 1.2
+	<?==========================================================================-->
+	<!--[10] Design Accomodation =============================================-->
+	<!--===== spacing ========================================================-->
+	<style>
+	@media only screen and (max-width: 480px) {
+		.padding-t, .padding-y, .padding-xy, .tile-body { padding-top: 0px !important; }
+		.padding-b, .padding-y, .padding-xy, .tile-body { padding-bottom: 30px !important; }
+		.padding-l, .padding-x, .padding-xy, .tile-body { padding-left: 10px !important; }
+		.padding-r, .padding-x, .padding-xy, .tile-body { padding-right: 10px !important; }
+		.margin-t, .margin-y, .margin-xy, .tile-body { margin-top: 0px !important; }
+		.margin-b, .margin-y, .margin-xy, .tile-body { margin-bottom: 30px !important; }
+		.margin-l, .margin-x, .margin-xy, .tile-body { margin-left: 10px !important; }
+		.margin-r, .margin-x, .margin-xy, .tile-body { margin-right: 10px !important; }
+	}
+	</style>
+	<!--===== Text, Anchors ==================================================-->
+	<style>
+	p, h1, h2, h3, h4, h5, h6, ol, ul, li {
+		margin-bottom: 10px;
+	}
+	h1, .h1, #global h1 img, #global .h1 img {
+		font-size: 48px;
+		line-height: 50px;
+	}
+	h2, .h2, #global h2 img, #global .h2 img {
+		font-size: 28px;
+		line-height: 30px;
+	}
+	h3, .h3, #global h3 img, #global .h3 img {
+		font-size: 22px;
+		line-height: 24px;
+	}
+	h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+		font-weight: bolder;
+	}
+	h4, .h4, #global h4 img, #global .h4 img {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	h5, .h5, #global h5 img, #global .h5 img {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	h6, .h6, #global h6 img, #global .h6 img {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	h5, h6, .h5, .h6 {
+		font-weight: normal;
+		font-style: italic;
+	}
+	table {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.text-small {
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.button {
+		font-size: 19px;
+		font-weight: bolder;
+		border-radius: 100px;
+	}
+	</style>
+	<!--===== Default Motif ==================================================-->
+	<style>
+	h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+		color: #0a2b5a;
+	}
+	#global h1 a, #global h2 a, #global h3 a, #global h4 a, #global .h1 a, #global .h2 a, #global .h3 a, #global .h4 a {
+		color: #0a2b5a;
+	}
+	#global .button {
+		color: #ffffff;
+	}
+	#global, #global table, #global a {
+		color: #191919;
+	}
+	#global a.a {
+		color: #0a2b5a;
+	}
+	#global .underline {
+		border-bottom-color: #0a2b5a;
+	}
+	#global .text-small, #global .text-small a {
+		color: #5a5a5a;
+	}
+	#global .text-small a.a {
+		color: #0568AE;
+	}
+	</style>
+	<!--===== Light Text Motif ===============================================-->
+	<style>
+	#global .text-light .button {
+		color: #ffffff;
+	}
+	#global .text-light, #global .text-light table, #global .text-light a {
+		color: #ffffff;
+	}
+	#global .text-light a.a, #global .text-light .underline {
+		color: #0a2b5a;
+	}
+	#global .text-light .text-small, #global .text-light .text-small a {
+		color: #ffffff;
+	}
+	#global .text-light .text-small a.a {
+		color: #0a2b5a;
+	}
+	</style>
+	<!--===== Dark Background ================================================-->
+	<style>
+	.background-dark, .background-dark table {
+		background-color: #191919;
+	}
+	</style>
+	<!-- [20] Organisims =====================================================-->
+	<!--===== header, footer =================================================-->
+	<style>
+	@media only screen and (max-width: 480px) {
+		.header .logo {
+			width: 130px !important;
+			font-size: 22px;
+			font-weight: bold;
+			max-height: 42px;
+		}
+		.header .button {
+			width: 140px !important;
+		}
+	}
+	</style>
+	<!--===== text and image columns =========================================-->
+	<style>
+	@media only screen and (max-width: 480px) {
+		.text-image .cell {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			text-align: center !important;
+		}
+	}
+	</style>
+	<!--===== Key Art (movie posters) ========================================-->
+	<style>
+	@media only screen and (max-width: 480px) {
+		#global .grid-narrow {
+			max-width: 310px;
+		}
+		#global .key-art.grid-narrow {
+			max-width: 315px;
+		}
+	}
+	</style>
+	<!--===== Schedule table =================================================-->
+	<style>
+	@media only screen and (max-width: 480px) {
+		.schedule-table {
+			font-size: 11px !important;
+			line-height: 13px;
+		}
+		.schedule-table td {
+			word-wrap: normal;
+			overflow-wrap: normal;
+		}
+		.schedule-table .first {
+			padding-left: 0 !important;
+			width: auto !important;
+		}
+		.schedule-table .at-location {
+			width: 10px;
+			word-wrap: normal;
+			overflow-wrap: normal;
+			word-break: keep-all;
+			white-space: nowrap;
+		}
+		.schedule-table .last {
+			padding-right: 0 !important;
+			width: 75px !important;
+		}
+	}
+	</style>
+	<!--==========================================================================>
+	[Z] Project Custom Styles
+	<?==========================================================================-->
+	<!-- [00] Code Examples ====================================================>
+	// stackable grid cells
+	<table class="grid" style="width: 100%;" role="presentation">
+	<tr style="vertical-align: top;">
+	<td class="cell">
+</td>
+<td class="cell">
+</td>
+</tr>
+</table>
+// link
+<a class="a" target="_blank">link</a>
+// unstyled link
+<a href="" target="_blank">link</a>
+// img
+<div class="inline-wrap">
+<img src="images/" width="100" style="max-width: 100px" alt="">
+</div>
+// linked image
+<div class="inline-wrap">
+<a href="#" target="_blank"> <img src="images/" width="100" style="max-width: 100px;" alt="#"> </a>
+</div>
+// linked imageswap
+.h2-uniquename-wrap {
+max-width: 300px;
+margin: 0 auto;
+}
+.h2-uniquename {
+padding-bottom: 100%;
+}
+<div class="h1-uniquename-wrap">
+<a href="#" target="_blank">
+<img class="imageswap-desktop" src="https://via.placeholder.com/500x100/17BCF9/ffffff" width="500" style="max-width: 500px;" alt="LOREM IPSUM DOLOR">
+<span class="imageswap-mobile h1-uniquename" style="background-image: url(https://via.placeholder.com/500/B5EA72/ffffff)"></span>
+</a>
+</div>
+-->
+<!-- [10] Global =========================================================-->
+<style>
+</style>
+<!-- [20] Landscape ======================================================-->
+<style>
+@media only screen and (max-height: 480px) {
+}
+</style>
+<!-- [30] Mobile =========================================================-->
+<style>
+@media only screen and (max-width: 480px) {
+	.h1xl-graphic,
+	.h1-graphic,
+	.h2-graphic,
+	.h3-graphic,
+	.h4-graphic,
+	.h5-graphic,
+	.h6-graphic {
+		padding-bottom: 31.25%;
+	}
+}
+</style>
+
+<title>DIRECTV</title>
 </head>
-<body class="clean-body" style="margin: 0; padding: 0; -webkit-text-size-adjust: 100%; background-color: #f2f2f2;">
-	<!--[if IE]><div class="ie-browser"><![endif]-->
-	<table bgcolor="#f2f2f2" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="table-layout: fixed; vertical-align: top; min-width: 320px; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f2f2f2; width: 100%;" valign="top" width="100%">
-		<tbody>
-			<tr style="vertical-align: top;" valign="top">
-				<td style="word-break: break-word; vertical-align: top;" valign="top">
-					<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color:#f2f2f2"><![endif]-->
 
-					<div style="background-color:transparent;">
-						<div class="block-grid" style="min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: #ffffff;">
-							<div style="border-collapse: collapse;display: table;width: 100%;background-color:#ffffff;">
-								<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:680px"><tr class="layout-full-width" style="background-color:#ffffff"><![endif]-->
-								<!--[if (mso)|(IE)]><td align="center" width="680" style="background-color:#ffffff;width:680px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:0px; padding-bottom:0px;"><![endif]-->
-								<div class="col num12" style="min-width: 320px; max-width: 680px; display: table-cell; vertical-align: top; width: 680px;">
-									<div class="col_cont" style="width:100% !important;">
-										<!--[if (!mso)&(!IE)]><!-->
-										<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:0px; padding-bottom:0px; padding-right: 0px; padding-left: 0px;">
-											<!--<![endif]-->
-											<table cellpadding="0" cellspacing="0" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-												<tr style="vertical-align: top;" valign="top">
-													<td align="center" style="word-break: break-word; vertical-align: top; padding-bottom: 15px; padding-left: 30px; padding-right: 30px; padding-top: 40px; text-align: center; width: 100%;" valign="top" width="100%">
-														<div class="inline-wrap">
-															<a href="https://podcastfellowship.org" target="_blank"> <img src="https://i.imgur.com/YKAVXWL.png" width="600" style="max-width: 100%;width:100%;" alt="Podcast Fellowship"> </a>
-														</div>
-													</td>
-												</tr>
-											</table>
-											<table cellpadding="0" cellspacing="0" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-												<tr style="vertical-align: top;" valign="top">
-													<td align="center" style="word-break: break-word; vertical-align: top; padding-bottom: 15px; padding-left: 30px; padding-right: 30px; padding-top: 40px; text-align: center; width: 100%;" valign="top" width="100%">
-														<h1 class="reduce-lh" style="color:#00292c;direction:ltr;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;font-size:26px;font-weight:normal;letter-spacing:normal;line-height:40px;text-align:center;margin-top:0;margin-bottom:0;max-width: 430px;margin: 0 auto;">A reminder to please log your Podcast Fellowship student hours</h1>
-													</td>
-												</tr>
-											</table>
-											<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top: 15px; padding-bottom: 45px; font-family: Tahoma, Verdana, sans-serif"><![endif]-->
-											<div style="color:#000000;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;line-height:1.5;padding-top:15px;padding-right:30px;padding-bottom:45px;padding-left:30px;">
-												<div class="txtTinyMce-wrapper" style="line-height: 1.5; font-size: 12px; color: #000000; font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif; mso-line-height-alt: 18px;">
+<body lang="en" id="body">
+	<!-- preview text	==========================================================-->
+	<div style="display: none;">
 
-													<p style="font-size: 18px; line-height: 1.5; word-break: break-word; text-align: center; mso-line-height-alt: 27px; margin: 0;">Thank you for using the Podcast Fellowship as a tool to connect to your students. A foundation of our success is that students are paid every week. Please follow this link to let us know which of your students completed a podcast this week so that we can send a stipend.<br><br><br></p>
-													<!--[if mso]></td></tr></table><![endif]-->
-													<div align="left" class="button-container" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;text-align:center;">
-														<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px" align="left"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:33pt;width:132pt;v-text-anchor:middle;" arcsize="0%" strokeweight="0.75pt" strokecolor="#0a2b5a" fillcolor="#0a2b5a"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:Tahoma, Verdana, sans-serif; font-size:16px"><![endif]-->
-														<div style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#0a2b5a;border-radius:0px;-webkit-border-radius:0px;-moz-border-radius:0px;width:auto; width:auto;;border-top:1px solid #0a2b5a;border-right:1px solid #0a2b5a;border-bottom:1px solid #0a2b5a;border-left:1px solid #0a2b5a;padding-top:5px;padding-bottom:5px;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;">
-															<a style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:undefined;color:white;text-decoration:none;" href="https://podcastfellowship.org/login" target="_blank" style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:undefined;">
-																<span style="font-size: 16px; line-height: 2; word-break: break-word; mso-line-height-alt: 32px;color:white;text-decoration:none;">LOG IN HERE</span>
-															</a>
-														</div>
-														<!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
-													</div>
-													<!--[if (!mso)&(!IE)]><!-->
-													<p style="font-size: 18px; line-height: 1.5; word-break: break-word; text-align: center; mso-line-height-alt: 27px; margin: 0;">	<br><br>Paying your students is as easy as 1-2-3:</p>
-												</div>
+	</div>
 
-											</div>
-											<!--[if mso]></td></tr></table><![endif]-->
-											<!--[if (!mso)&(!IE)]><!-->
-										</div>
-										<!--<![endif]-->
+	<div style="display: none;">
+
+		<!-- preview text whitespace -->
+		&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; <hr> </div>
+		<!-- end preview text ======================================================-->
+
+		<div id="global" style="font-size: 14px;">
+			<!--[if !mso]><!--><div id="not-mso"><!--<![endif]--><!--[if mso]><div id="mso"><![endif]-->
+
+			<table id="content-wrap" style="width: 100%;" role="presentation">
+				<tr>
+					<td class="hide-for-medium">&zwnj;</td>
+					<td id="content" style="width: 600px;">
+						<!-- begin email content -->
+
+						<table style="width: 100%;" role="presentation">
+							<tr>
+								<td class="padding-y" style="padding: 0 0 30px;">
+
+									<div class="inline-wrap">
+										<a href="https://podcastfellowship.org" target="_blank"> <img src="https://i.imgur.com/YKAVXWL.png" width="600" style="max-width: 100%;width:100%;" alt="Podcast Fellowship"> </a>
 									</div>
-								</div>
-								<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-								<!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
+
+								</td>
+							</tr>
+							<tr>
+								<td class="padding-xy" style="padding: 0 20px 30px; text-align: center;">
+
+									<br><p style="font-size:26px;line-height:35px;"> A reminder to please log your Podcast Fellowship student hours </p>
+
+									<!-- in body legal -->
+									<p class="text-small" style="font-size: 18px;line-height:25px;"> <br>Thank you for using the Podcast Fellowship as a tool to connect to your students. A foundation of our success is that students are paid every week. Please follow this link to let us know which of your students completed a podcast this week so that we can send a stipend.<br><br> </p>
+
+									<div class="button-wrap">
+										<!--[if mso]>
+										<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://podcastfellowship.org/login" style="height:40px;v-text-anchor:middle;width:160px;" stroke="f" fillcolor="#0a2b5a">
+										<w:anchorlock/>
+										<center>
+										<![endif]-->
+										<a class="button" href="https://podcastfellowship.org/login"
+										style="background-color:#0a2b5a;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:170px;-webkit-text-size-adjust:none;letter-spacing: 1.1px;">LOG IN HERE</a>
+										<!--[if mso]>
+									</center>
+								</v:rect>
+								<![endif]-->
 							</div>
-						</div>
+
+							<p class="text-small" style="font-size: 18px;line-height:25px;"><br><br>Paying your students is as easy as 1-2-3:<br> </p>
+
+						</td>
+					</tr>
+				</table>
+
+				<!-- end columns-image-left 33/66 -->
+				<div class="hr margin-xy" style="border-top: 1px solid #A3A3A3; margin: 0 20px 30px;">&nbsp;</div>
+				<!--==== columns-image-left 50/50 -->
+				<table class="grid-wrap text-image" style="width: 100%;" role="presentation">
+					<tr>
+						<td class="padding-x" style="padding: 0 20px;">
+
+							<table class="grid" style="width: 100%;" role="presentation">
+								<tr>
+									<td class="cell" style="width: 50%; padding: 0 10px 30px 0;">
+
+										<div class="inline-wrap">
+											<a href="https://www.podcastfellowship.org/login" target="_blank"> <img src="https://i.imgur.com/g7DAVhj.png" width="260" style="max-width: 260px;" alt=""> </a>
+										</div>
+
+									</td>
+									<td class="cell" style="width: 50%; padding: 0 0 30px 10px;">
+
+										<h4 style="color: #0a2b5a;"> Step 1 </h4>
+										<br>
+
+										<h5 style="font-size:22px;line-height:28px;"> Log into the site </h5>
+										<br>
+
+										<p style="font-size:16px;line-height:23px;"> To log in, use your email address and the password you created. If you have any issues logging in, please email <a href="mailto:leah@podcastfellowship.org" rel="noopener" style="text-decoration: none; color: #393d47;" target="_blank">l&zwnj;eah@&zwnj;podcastfellowship.org</a> </p>
+
+									</td>
+								</tr>
+							</table>
+							<br>
+
+						</td>
+					</tr>
+					<tr>
+						<td class="padding-x" style="padding: 0 20px;text-align: center;">
+							<div class="button-wrap">
+								<!--[if mso]>
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://podcastfellowship.org/login" style="height:40px;v-text-anchor:middle;width:160px;" stroke="f" fillcolor="#0a2b5a">
+								<w:anchorlock/>
+								<center>
+								<![endif]-->
+								<a class="button" href="https://podcastfellowship.org/login"
+								style="background-color:#0a2b5a;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:170px;-webkit-text-size-adjust:none;letter-spacing: 1.1px;">LOG IN</a>
+								<!--[if mso]>
+							</center>
+						</v:rect>
+						<![endif]-->
 					</div>
-					<div style="background-color:transparent;">
-						<div class="block-grid two-up" style="min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: #fbfbfb;">
-							<div style="border-collapse: collapse;display: table;width: 100%;background-color:#fbfbfb;">
-								<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:680px"><tr class="layout-full-width" style="background-color:#fbfbfb"><![endif]-->
-								<!--[if (mso)|(IE)]><td align="center" width="340" style="background-color:#fbfbfb;width:340px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top:30px; padding-bottom:30px;"><![endif]-->
-								<div class="col num6" style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 336px; width: 340px;">
-									<div class="col_cont" style="width:100% !important;">
-										<!--[if (!mso)&(!IE)]><!-->
-										<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 30px; padding-left: 30px;">
-											<!--<![endif]-->
-											<div align="center" class="img-container center autowidth" style="padding-right: 0px;padding-left: 0px;">
-												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
-												<a href="https://www.podcastfellowship.org/login" target="_blank">
-													<img align="center" alt="Log in" border="0" class="center autowidth" src="https://i.imgur.com/g7DAVhj.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 280px; display: block;" title="Log in" width="280"/>
-												</a>
-												<!--[if mso]></td></tr></table><![endif]-->
-											</div>
-											<!--[if (!mso)&(!IE)]><!-->
-										</div>
-										<!--<![endif]-->
-									</div>
-								</div>
-								<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-								<!--[if (mso)|(IE)]></td><td align="center" width="340" style="background-color:#fbfbfb;width:340px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top:30px; padding-bottom:30px;"><![endif]-->
-								<div class="col num6" style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 336px; width: 340px;">
-									<div class="col_cont" style="width:100% !important;">
-										<!--[if (!mso)&(!IE)]><!-->
-										<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 30px; padding-left: 30px;">
-											<!--<![endif]-->
-											<table cellpadding="0" cellspacing="0" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-												<tr style="vertical-align: top;" valign="top">
-													<td align="center" style="word-break: break-word; vertical-align: top; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: center; width: 100%;" valign="top" width="100%">
-														<h3 style="color:#0a2b5a;direction:ltr;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;font-size:18px;font-weight:normal;letter-spacing:1px;line-height:150%;text-align:left;margin-top:0;margin-bottom:0;font-weight:bold;;">Step 1</h3>
-													</td>
-												</tr>
-											</table>
-											<table cellpadding="0" cellspacing="0" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-												<tr style="vertical-align: top;" valign="top">
-													<td align="center" style="word-break: break-word; vertical-align: top; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 20px; text-align: center; width: 100%;" valign="top" width="100%">
-														<h2 style="color:#2c1717;direction:ltr;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;font-size:18px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">Log into the site</h2>
-													</td>
-												</tr>
-											</table>
-											<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 20px; font-family: Tahoma, Verdana, sans-serif"><![endif]-->
-											<div style="color:#393d47;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;line-height:1.5;padding-top:0px;padding-right:0px;padding-bottom:20px;padding-left:0px;">
-												<div class="txtTinyMce-wrapper" style="line-height: 1.5; font-size: 12px; color: #393d47; font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif; mso-line-height-alt: 18px;">
-													<p style="font-size: 16px; line-height: 1.5; word-break: break-word; mso-line-height-alt: 22px; margin: 0;"><span style="font-size: 16px;">To log in, use your email address and the password you created. If you have any issues logging in, please email <a href="mailto:leah@podcastfellowship.org" rel="noopener" style="text-decoration: none; color: #393d47;" target="_blank">l&zwnj;eah@&zwnj;podcastfellowship.org</a></span>.</p>
-												</div>
-											</div>
-											<!--[if mso]></td></tr></table><![endif]-->
-											<div align="left" class="button-container" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
-												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px" align="left"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:33pt;width:132pt;v-text-anchor:middle;" arcsize="0%" strokeweight="0.75pt" strokecolor="#0a2b5a" fillcolor="#0a2b5a"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:Tahoma, Verdana, sans-serif; font-size:16px"><![endif]-->
-												<div style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#0a2b5a;border-radius:0px;-webkit-border-radius:0px;-moz-border-radius:0px;width:auto; width:auto;;border-top:1px solid #0a2b5a;border-right:1px solid #0a2b5a;border-bottom:1px solid #0a2b5a;border-left:1px solid #0a2b5a;padding-top:5px;padding-bottom:5px;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;">
-													<a style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:undefined;color:white;text-decoration:none;" href="https://podcastfellowship.org/login" target="_blank" style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:undefined;">
-														<span style="font-size: 16px; line-height: 2; word-break: break-word; mso-line-height-alt: 32px;color:white;text-decoration:none;">LOG IN</span>
-													</a>
-												</div>
-												<!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
-											</div>
-											<!--[if (!mso)&(!IE)]><!-->
-										</div>
-										<!--<![endif]-->
-									</div>
-								</div>
-								<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-								<!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
-							</div>
-						</div>
-					</div>
-					<div style="background-color:transparent;">
-						<div class="block-grid two-up" style="min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: #fbfbfb;">
-							<div style="border-collapse: collapse;display: table;width: 100%;background-color:#fbfbfb;;direction:rtl">
-								<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:680px"><tr class="layout-full-width" style="background-color:#fbfbfb"><![endif]-->
-								<!--[if (mso)|(IE)]><td align="center" width="340" style="background-color:#fbfbfb;width:340px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top:30px; padding-bottom:30px;"><![endif]-->
-								<div class="col num6" style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 336px; width: 340px; direction: ltr;">
-									<div class="col_cont" style="width:100% !important;">
-										<!--[if (!mso)&(!IE)]><!-->
-										<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 30px; padding-left: 30px;">
-											<!--<![endif]-->
-											<div align="center" class="img-container center autowidth" style="padding-right: 0px;padding-left: 0px;">
-												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
-												<a href="https://www.podcastfellowship.org" target="_blank">
-													<img align="center" alt="Find student name" border="0" class="center autowidth" src="https://i.imgur.com/bJV13Rc.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 280px; display: block;" title="Find student name" width="280"/>
-												</a>
-												<!--[if mso]></td></tr></table><![endif]-->
-											</div>
-											<!--[if (!mso)&(!IE)]><!-->
-										</div>
-										<!--<![endif]-->
-									</div>
-								</div>
-								<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-								<!--[if (mso)|(IE)]></td><td align="center" width="340" style="background-color:#fbfbfb;width:340px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top:30px; padding-bottom:30px;"><![endif]-->
-								<div class="col num6" style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 336px; width: 340px; direction: ltr;">
-									<div class="col_cont" style="width:100% !important;">
-										<!--[if (!mso)&(!IE)]><!-->
-										<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 30px; padding-left: 30px;">
-											<!--<![endif]-->
-											<table cellpadding="0" cellspacing="0" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-												<tr style="vertical-align: top;" valign="top">
-													<td align="center" style="word-break: break-word; vertical-align: top; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: center; width: 100%;" valign="top" width="100%">
-														<h3 style="color:#0a2b5a;direction:ltr;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;font-size:18px;font-weight:normal;letter-spacing:1px;line-height:150%;text-align:left;margin-top:0;margin-bottom:0;font-weight:bold;;">Step 2</h3>
-													</td>
-												</tr>
-											</table>
-											<table cellpadding="0" cellspacing="0" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-												<tr style="vertical-align: top;" valign="top">
-													<td align="center" style="word-break: break-word; vertical-align: top; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 20px; text-align: center; width: 100%;" valign="top" width="100%">
-														<h2 style="color:#2c1717;direction:ltr;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;font-size:18px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">Find the student(s) you wish to pay</h2>
-													</td>
-												</tr>
-											</table>
-											<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 20px; font-family: Tahoma, Verdana, sans-serif"><![endif]-->
-											<div style="color:#393d47;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;line-height:1.5;padding-top:0px;padding-right:0px;padding-bottom:20px;padding-left:0px;">
-												<div class="txtTinyMce-wrapper" style="line-height: 1.5; font-size: 12px; color: #393d47; font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif; mso-line-height-alt: 18px;">
-													<p style="font-size: 16px; line-height: 1.5; word-break: break-word; mso-line-height-alt: 24px; margin: 0;"><span style="font-size: 16px;">Scroll down in the dashboard until you find the name of the student or students you met with this week, to whom you wish to request payment.</span></p>
-												</div>
-											</div>
+					<br>
+					<br>
 
-										</div>
-									</div>
-									<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-									<!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
-								</div>
-							</div>
-						</div>
-						<div style="background-color:transparent;">
-							<div class="block-grid two-up" style="min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: #fbfbfb;">
-								<div style="border-collapse: collapse;display: table;width: 100%;background-color:#fbfbfb;">
-									<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:680px"><tr class="layout-full-width" style="background-color:#fbfbfb"><![endif]-->
-									<!--[if (mso)|(IE)]><td align="center" width="340" style="background-color:#fbfbfb;width:340px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top:30px; padding-bottom:30px;"><![endif]-->
-									<div class="col num6" style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 336px; width: 340px;">
-										<div class="col_cont" style="width:100% !important;">
-											<!--[if (!mso)&(!IE)]><!-->
-											<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 30px; padding-left: 30px;">
-												<!--<![endif]-->
-												<div align="center" class="img-container center autowidth" style="padding-right: 0px;padding-left: 0px;">
-													<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
-													<a href="https://www.podcastfellowship.org/login" target="_blank">
-														<img align="center" alt="Step 3" border="0" class="center autowidth" src="https://i.imgur.com/MVQm4M7.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 280px; display: block;" title="Step 3" width="280"/>
-													</a>
-													<!--[if mso]></td></tr></table><![endif]-->
-												</div>
-												<!--[if (!mso)&(!IE)]><!-->
-											</div>
-											<!--<![endif]-->
-										</div>
-									</div>
-									<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-									<!--[if (mso)|(IE)]></td><td align="center" width="340" style="background-color:#fbfbfb;width:340px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top:30px; padding-bottom:30px;"><![endif]-->
-									<div class="col num6" style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 336px; width: 340px;">
-										<div class="col_cont" style="width:100% !important;">
-											<!--[if (!mso)&(!IE)]><!-->
-											<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 30px; padding-left: 30px;">
-												<!--<![endif]-->
-												<table cellpadding="0" cellspacing="0" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-													<tr style="vertical-align: top;" valign="top">
-														<td align="center" style="word-break: break-word; vertical-align: top; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: center; width: 100%;" valign="top" width="100%">
-															<h3 style="color:#0a2b5a;direction:ltr;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;font-size:18px;font-weight:normal;letter-spacing:1px;line-height:150%;text-align:left;margin-top:0;margin-bottom:0;font-weight:bold;;">Step 3</h3>
-														</td>
-													</tr>
-												</table>
-												<table cellpadding="0" cellspacing="0" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-													<tr style="vertical-align: top;" valign="top">
-														<td align="center" style="word-break: break-word; vertical-align: top; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 20px; text-align: center; width: 100%;" valign="top" width="100%">
-															<h2 style="color:#2c1717;direction:ltr;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;font-size:18px;font-weight:normal;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">Press "Pay Now"</h2>
-														</td>
-													</tr>
-												</table>
-												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 20px; font-family: Tahoma, Verdana, sans-serif"><![endif]-->
-												<div style="color:#393d47;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;line-height:1.5;padding-top:0px;padding-right:0px;padding-bottom:20px;padding-left:0px;">
-													<div class="txtTinyMce-wrapper" style="line-height: 1.5; font-size: 12px; color: #393d47; font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif; mso-line-height-alt: 18px;">
-														<p style="font-size: 16px; line-height: 1.5; word-break: break-word; mso-line-height-alt: 24px; margin: 0;"><span style="font-size: 16px;">Click "Pay Now" in the row of the student you wish to pay. This request will get sent to our administrators, who will review and accept the payment request, and send money directly to your student's Paypal account.</span></p>
-													</div>
-												</div>
-											</div>
-											<!--<![endif]-->
-										</div>
-									</div>
-									<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-									<!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
-								</div>
-							</div>
-						</div>
-
-						<div style="background-color:transparent;">
-							<div class="block-grid mixed-two-up" style="min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: #fbfbfb;">
-								<div style="border-collapse: collapse;display: table;width: 100%;background-color:#fbfbfb;">
-									<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:680px"><tr class="layout-full-width" style="background-color:#fbfbfb"><![endif]-->
-									<!--[if (mso)|(IE)]><td align="center" width="396" style="background-color:#fbfbfb;width:396px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top:30px; padding-bottom:30px;"><![endif]-->
-									<div class="col num7" style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 392px; width: 396px;">
-										<div class="col_cont" style="width:100% !important;">
-											<!--[if (!mso)&(!IE)]><!-->
-											<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 30px; padding-left: 30px;">
-												<!--<![endif]-->
-												<div align="left" class="img-container left fixedwidth" style="padding-right: 0px;padding-left: 0px;">
-													<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="left"><![endif]-->
-													<a href="https://www.podcastfellowship.org" target="_blank">
-														<img alt="Podcast Fellowship Logo" border="0" class="left fixedwidth center-img-mobile" src="https://i.imgur.com/Uw9rsLl.jpg" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 168px; display: block;" title="Podcast Fellowship" width="168"/>
-													</a>
-													<!--[if mso]></td></tr></table><![endif]-->
-												</div>
-												<!--[if (!mso)&(!IE)]><!-->
-											</div>
-											<!--<![endif]-->
-										</div>
-									</div>
-									<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-									<!--[if (mso)|(IE)]></td><td align="center" width="283" style="background-color:#fbfbfb;width:283px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top:30px; padding-bottom:30px;"><![endif]-->
-									<div class="col num5" style="display: table-cell; vertical-align: top; max-width: 320px; min-width: 280px; width: 283px;">
-										<div class="col_cont" style="width:100% !important;">
-											<!--[if (!mso)&(!IE)]><!-->
-											<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 30px; padding-left: 30px;">
-												<!--<![endif]-->
-												<table cellpadding="0" cellspacing="0" class="social_icons" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top" width="100%">
-													<tbody>
-														<tr style="vertical-align: top;" valign="top">
-															<td style="word-break: break-word; vertical-align: top; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;" valign="top">
-																<table align="center" cellpadding="0" cellspacing="0" class="social_table" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-tspace: 0; mso-table-rspace: 0; mso-table-bspace: 0; mso-table-lspace: 0;" valign="top">
-																	<tbody>
-																		<tr align="center" style="vertical-align: top; display: inline-block; text-align: center;" valign="top">
-																			<td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 2.5px; padding-left: 2.5px;" valign="top"><a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" height="32" src="https://i.imgur.com/1M6dmZD.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="facebook" width="32"/></a></td>
-																			<td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 2.5px; padding-left: 2.5px;" valign="top"><a href="https://www.twitter.com/" target="_blank"><img alt="Twitter" height="32" src="https://i.imgur.com/4j9AJaH.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="twitter" width="32"/></a></td>
-																			<td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 2.5px; padding-left: 2.5px;" valign="top"><a href="https://www.linkedin.com/company/the-podcast-fellowship" target="_blank"><img alt="Linkedin" height="32" src="https://i.imgur.com/QmrrHMZ.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="linkedin" width="32"/></a></td>
-																			<td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 2.5px; padding-left: 2.5px;" valign="top"><a href="https://www.instagram.com/" target="_blank"><img alt="Instagram" height="32" src="https://i.imgur.com/SfaJamo.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;" title="instagram" width="32"/></a></td>
-																		</tr>
-																	</tbody>
-																</table>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 5px; font-family: Tahoma, Verdana, sans-serif"><![endif]-->
-												<div style="color:#393d47;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;line-height:1.5;padding-top:0px;padding-right:0px;padding-bottom:5px;padding-left:0px;">
-													<div class="txtTinyMce-wrapper" style="line-height: 1.5; font-size: 12px; color: #393d47; font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif; mso-line-height-alt: 18px;">
-														<p style="font-size: 14px; line-height: 1.5; word-break: break-word; text-align: center; mso-line-height-alt: 21px; margin: 0;">
-															<span style="font-size: 14px; color: #999999;">
-																<a href="https://www.podcastfellowship.org" rel="noopener" style="text-decoration: none; color: #999999;" target="_blank">www.podcastfellowship.org</a>
-															</span>
-														</p>
-													</div>
-												</div>
-												<!--[if mso]></td></tr></table><![endif]-->
-												<!--[if (!mso)&(!IE)]><!-->
-											</div>
-											<!--<![endif]-->
-										</div>
-									</div>
-									<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-									<!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
-								</div>
-							</div>
-						</div>
-						<div style="background-color:transparent;">
-							<div class="block-grid" style="min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: #fbfbfb;">
-								<div style="border-collapse: collapse;display: table;width: 100%;background-color:#fbfbfb;">
-									<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:680px"><tr class="layout-full-width" style="background-color:#fbfbfb"><![endif]-->
-									<!--[if (mso)|(IE)]><td align="center" width="680" style="background-color:#fbfbfb;width:680px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:0px; padding-bottom:0px;"><![endif]-->
-									<div class="col num12" style="min-width: 320px; max-width: 680px; display: table-cell; vertical-align: top; width: 680px;">
-										<div class="col_cont" style="width:100% !important;">
-											<!--[if (!mso)&(!IE)]><!-->
-											<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:0px; padding-bottom:0px; padding-right: 0px; padding-left: 0px;">
-												<!--<![endif]-->
-												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 30px; padding-left: 30px; padding-top: 30px; padding-bottom: 30px; font-family: Tahoma, Verdana, sans-serif"><![endif]-->
-												<div style="color:#393d47;font-family:Roboto, Tahoma, Verdana, Segoe, sans-serif;line-height:1.5;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;">
-													<div class="txtTinyMce-wrapper" style="line-height: 1.5; font-size: 12px; color: #393d47; font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif; mso-line-height-alt: 18px;">
-														<p style="font-size: 12px; line-height: 1.5; word-break: break-word; text-align: center; mso-line-height-alt: 18px; margin: 0;">
-															<span style="font-size: 12px; color: #999999;">If you any questions about how to log in, how to pay students, or how The Podcast Fellowship works, please email us at <a href="mailto:testing@email.com" rel="noopener" style="text-decoration: underline; color: #7d7d7d;" target="_blank">testing@email.com</a>. &copy;2021 The Podcast Fellowship. All rights reserved. </span>
-														</p>
-													</div>
-												</div>
-												<!--[if mso]></td></tr></table><![endif]-->
-												<!--[if (!mso)&(!IE)]><!-->
-											</div>
-											<!--<![endif]-->
-										</div>
-									</div>
-									<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-									<!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
-								</div>
-							</div>
-						</div>
-						<div style="background-color:transparent;">
-							<div class="block-grid" style="min-width: 320px; max-width: 680px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; Margin: 0 auto; background-color: transparent;">
-								<div style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
-									<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:680px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
-									<!--[if (mso)|(IE)]><td align="center" width="680" style="background-color:transparent;width:680px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;"><![endif]-->
-									<div class="col num12" style="min-width: 320px; max-width: 680px; display: table-cell; vertical-align: top; width: 680px;">
-										<div class="col_cont" style="width:100% !important;">
-											<!--[if (!mso)&(!IE)]><!-->
-											<div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
-												<!--<![endif]-->
-												<table border="0" cellpadding="0" cellspacing="0" class="divider" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top" width="100%">
-													<tbody>
-														<tr style="vertical-align: top;" valign="top">
-															<td class="divider_inner" style="word-break: break-word; vertical-align: top; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;" valign="top">
-																<table align="center" border="0" cellpadding="0" cellspacing="0" class="divider_content" height="40" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-top: 0px solid transparent; height: 40px; width: 100%;" valign="top" width="100%">
-																	<tbody>
-																		<tr style="vertical-align: top;" valign="top">
-																			<td height="40" style="word-break: break-word; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" valign="top"><span></span></td>
-																		</tr>
-																	</tbody>
-																</table>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-												<!--[if (!mso)&(!IE)]><!-->
-											</div>
-											<!--<![endif]-->
-										</div>
-									</div>
-									<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-									<!--[if (mso)|(IE)]></td></tr></table></td></tr></table><![endif]-->
-								</div>
-							</div>
-						</div>
-					</td>
-				</tr>
-			</tbody>
+				</td>
+			</tr>
 		</table>
-		<!--[if (IE)]></div><![endif]-->
-	</body>
-	</html>
+		<!-- end columns-image-left 50/50 -->
+		<div class="hr margin-xy" style="border-top: 1px solid #A3A3A3; margin: 0 20px 30px;">&nbsp;</div>
+		<!--==== columns-image-right reverse-stack 50/50 -->
+		<table class="grid-wrap text-image" style="width: 100%;" role="presentation">
+			<tr>
+				<td class="padding-x" style="padding: 0 20px;">
+
+					<table class="grid" style="direction: rtl; width: 100%;" role="presentation">
+						<tr>
+							<td class="cell" style="direction: ltr; width: 50%; text-align: right; padding: 0 0 30px 10px;">
+
+								<div class="inline-wrap">
+									<a href="https://www.podcastfellowship.org/login" target="_blank"> <img src="https://i.imgur.com/bJV13Rc.png" width="260" style="max-width: 260px;" alt="Step 2"> </a>
+								</div>
+
+							</td>
+							<td class="cell" style="direction: ltr; width: 50%; padding: 0 10px 30px 0;">
+
+								<h4 style="color: #0a2b5a;"> Step 2 </h4>
+								<br>
+
+								<h5 style="font-size:22px;line-height:28px;"> Find the student(s) you wish to pay
+								</h5>
+								<br>
+
+								<p style="font-size:16px;line-height:23px;"> Scroll down in the dashboard until you find the name of the student or students you met with this week, to whom you wish to request payment. </p>
+							</td>
+						</tr>
+					</table>
+					<br>
+
+				</td>
+			</tr>
+		</table>
+		<!-- end columns-image-right reverse-stack 50/50 -->
+		<div class="hr margin-xy" style="border-top: 1px solid #A3A3A3; margin: 0 20px 30px;">&nbsp;</div>
+
+		<table class="grid-wrap text-image" style="width: 100%;" role="presentation">
+			<tr>
+				<td class="padding-x" style="padding: 0 20px;">
+
+					<table class="grid" style="width: 100%;" role="presentation">
+						<tr>
+							<td class="cell" style="width: 50%; padding: 0 10px 30px 0;">
+
+								<div class="inline-wrap">
+									<a href="https://www.podcastfellowship.org/login" target="_blank"> <img src="https://i.imgur.com/MVQm4M7.png" alt="Step 3" width="260" style="max-width: 260px;" alt=""> </a>
+								</div>
+
+							</td>
+							<td class="cell" style="width: 50%; padding: 0 0 30px 10px;">
+
+								<h4 style="color: #0a2b5a;"> Step 3 </h4>
+								<br>
+
+								<h5 style="font-size:22px;line-height:28px;"> Press "Pay Now" </h5>
+								<br>
+
+								<p style="font-size:16px;line-height:23px;"> Click "Pay Now" in the row of the student you wish to pay. This request will get sent to our administrators, who will review and accept the payment request, and send money directly to your student's Paypal account. </p>
+
+							</td>
+						</tr>
+					</table>
+					<br>
+
+				</td>
+			</tr>
+		</table>
+
+
+		<!--==== social footer -->
+		<table style="text-align: center; width: 100%;" role="presentation">
+			<tr>
+				<td class="inline-wrap padding-xy" style="padding: 0 20px 30px;">
+
+					<table class="hr" style="border-top: 1px solid #A3A3A3; width: 100%;" role="presentation"><tr><td>&nbsp;</td></tr></table>
+
+					<table class="social inline-table" style="display: inline-table; width: 230px; max-width: 230px;" role="presentation">
+						<tr>
+							<td style="padding: 30px 24px 30px 0;">
+
+								<div class="inline-wrap">
+									<a href="http://%%track%%/facebook" target="_blank"> <img src="https://i.imgur.com/1M6dmZD.png" width="52" style="max-width: 52px;" alt="Facebook"> </a>
+								</div>
+
+							</td>
+							<td style="padding: 30px 24px 30px;">
+
+								<div class="inline-wrap">
+									<a href="http://%%track%%/twitter" target="_blank"> <img src="https://i.imgur.com/QmrrHMZ.png" width="60" style="max-width: 60px;" alt="Twitter"> </a>
+								</div>
+
+							</td>
+							<td style="padding: 30px 0 20px 24px;">
+
+								<div class="inline-wrap">
+									<a href="http://%%track%%/instagram" target="_blank"> <img src="https://i.imgur.com/SfaJamo.png" width="55" style="max-width: 55px;" alt="Instagram"> </a>
+								</div>
+
+							</td>
+						</tr>
+					</table>
+
+					<table class="hr" style="border-top: 1px solid #A3A3A3; width: 100%;" role="presentation"><tr><td>&nbsp;</td></tr></table>
+
+				</td>
+			</tr>
+		</table>
+		<!-- end social footer -->
+
+		<!--==== footer -->
+		<table class="text-small" style="width: 100%;" role="presentation">
+			<tr>
+				<td class="padding-xy" style="color: #5a5a5a; padding: 0 40px 30px;">
+
+					<p> If you any questions about how to log in, how to pay students, or how The Podcast Fellowship works, please email us at <a href="mailto:leah@podcastfellowship.org" rel="noopener" style="text-decoration: underline; color: #7d7d7d;" target="_blank">l&zwnj;eah@&zwnj;podcastfellowship.org</a>. &copy;2021 The Podcast Fellowship. All rights reserved. </p>
+
+				</td>
+			</tr>
+		</table>
+		<!-- end footer -->
+
+		<!-- end email content -->
+	</td>
+	<td class="hide-for-medium">&zwnj;</td></tr></table>
+</div></div>
+</body>
+</html>
